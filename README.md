@@ -1,11 +1,11 @@
 # Project Organization
 ------------
 
-    ├── README.md          <- The top-level README for developers using this project.
+    ├── README.md        
     |          
     ├── data
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
+    │   ├── processed      
+    │   └── raw            
     │
     ├── models   
     │   ├── crop_yield_model      
@@ -15,15 +15,15 @@
     │
     ├── research          
     │
-    ├── ML            <- Generated models
+    ├── ML           
     │   ├── crop_yield        
     │   ├── crop_est
     |   ├── fertilizer_rec
     |   └── leaf_disease_detect
     |
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment
+    ├── requirements.txt   
     │
-    ├── src                <- Source code for use in this project.
+    ├── src                
     │   ├── Components                
     │   │
     │   ├── App.js           
