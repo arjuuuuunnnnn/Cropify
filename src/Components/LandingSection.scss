@@ -1,0 +1,97 @@
+// .landingSection{
+//     background-image: url('bg1.jpg');
+//     background-size: cover;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     padding-left: 70px;
+
+//     h1{
+//         color: white;
+//         font-weight: 900;
+//         font-size: 5.5em;
+//         margin: 0;
+//         line-height: 100%;
+//         margin: 10px 0;
+//     }
+//     h2{
+//         color: white;
+//         font-weight: 400;
+//         font-size: 4em;
+//         margin: 0;
+//         line-height: 100%;
+//         margin: 10px 0;
+//     }
+//     p {
+//         color: #D9D9D9;
+//         font-size: 1.3em;
+//         margin: 0;
+//     }
+// }
+
+.landingSection {
+    background-image: url('bg1.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+    position: relative;
+
+    .button-container {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+    }
+
+    .button-container a {
+        margin-left: 20px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 2px solid white;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .button-container a:hover {
+        background-color: white;
+        color: #333;
+    }
+
+    h1 {
+        color: white;
+        font-weight: 900;
+        font-size: 5.5em;
+        margin: 0;
+        line-height: 100%;
+        margin: 10px 0;
+        transition: color 0.3s; /* Added transition */
+    }
+
+    h1:hover {
+        color: red; /* Change color on hover */
+    }
+
+    h2 {
+        color: white;
+        font-weight: 400;
+        font-size: 4em;
+        margin: 0;
+        line-height: 100%;
+        margin: 10px 0;
+        transition: color 0.3s; /* Added transition */
+    }
+
+    h2:hover {
+        color: blue; /* Change color on hover */
+    }
+
+    p {
+        color: #D9D9D9;
+        font-size: 1.3em;
+        margin: 0;
+    }
+}

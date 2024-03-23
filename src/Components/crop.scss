@@ -1,0 +1,74 @@
+/* crop.css */
+
+.crop-calendar-container {
+  position: relative; /* Ensure the container is relatively positioned */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('bg1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.crop-calendar {
+  width: 400px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Add opacity to background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align content */
+}
+
+.crop-calendar h2 {
+  margin-bottom: 20px;
+}
+
+.selection-container {
+  margin-bottom: 20px;
+}
+
+.selection-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.selection-container select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.submit-button, .back-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px; /* Add margin between buttons */
+}
+
+.back-button {
+  background-color: red;
+}
+
+.crop-info {
+  margin-top: 20px;
+}
+
+.crop-list {
+  padding-left: 20px;
+}
+
+.crop-list li {
+  margin-bottom: 5px;
+}
+
+/* CSS for the back button container */
+.back-button-container {
+  text-align: center;
+  margin-top: 20px; /* Adjust margin-top as needed */
+}
+

@@ -1,0 +1,67 @@
+.about-page-container {
+  background-image: url('bg1.jpg'); /* Specify the path to your background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content {
+  text-align: center;
+  color: #ffffff; /* Adjust text color as needed */
+}
+
+.about-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+}
+
+.team-members {
+  margin-top: 40px;
+}
+
+.team-members h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.team-members ul {
+  list-style: none;
+  padding: 0;
+}
+
+.team-members li {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.team-members a {
+  color: #ffffff; /* Adjust link color as needed */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.team-members a:hover {
+  color: #ffa500; /* Adjust link hover color as needed */
+}
+
+
+
+.back-button {
+  color: #ffffff;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
