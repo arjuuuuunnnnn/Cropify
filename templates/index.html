@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Recommendation</title>
+</head>
+<body>
+    <h1>Crop Recommendation System</h1>
+    <form id="cropForm">
+        <label for="N">Nitrogen (N):</label>
+        <input type="number" id="N" name="N" required><br><br>
+        
+        <label for="P">Phosphorus (P):</label>
+        <input type="number" id="P" name="P" required><br><br>
+        
+        <label for="K">Potassium (K):</label>
+        <input type="number" id="K" name="K" required><br><br>
+        
+        <label for="Ph">pH:</label>
+        <input type="number" id="Ph" name="Ph" step="0.01" required><br><br>
+        
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required><br><br>
+        
+        <label for="district">District:</label>
+        <input type="text" id="district" name="district" required><br><br>
+        
+        <label for="start_month">Start Month:</label>
+        <input type="number" id="start_month" name="start_month" min="1" max="12" required><br><br>
+        
+        <label for="end_month">End Month:</label>
+        <input type="number" id="end_month" name="end_month" min="1" max="12" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        document.getElementById("cropForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var formData = new FormData(this);
+
+            fetch('/crop', {
+                method: 'POST',
+                body: JSON.stringify(Object.fromEntries(formData)),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("result").innerHTML = `
+                    <h2>Recommended Crop: ${data.crop}</h2>
+                    <p>Temperature: ${data.data.temp}</p>
+                    <p>Humidity: ${data.data.humidity}</p>
+                    <p>Number of Months: ${data.l}</p>
+                `;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+</body>
+</html>
+
