@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf</title>
+    <!-- Add your CSS links here -->
+    <style>
+        /* Custom styling for file upload */
+        .custom-file-upload {
+            border: 1px solid #ccc;
+            display: inline-block;
+            padding: 6px 12px;
+            cursor: pointer;
+            background-color: #f8f9fa;
+            color: #000;
+            border-radius: 5px;
+        }
+
+        .custom-file-upload:hover {
+            background-color: #e9ecef;
+        }
+
+        #file-chosen {
+            font-size: 16px;
+            color: #6c757d;
+        }
+
+        /* Styling for background image */
+        body {
+            background-image: url('/src/Components/bg1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Styling for container */
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 800px; /* Adjust the maximum width as needed */
+            width: 100%; /* Ensure container takes full width */
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <!-- For demo purpose -->
+        <div class="row mb-5 text-center text-white">
+            <div class="col-lg-10 mx-auto">
+                <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color: whitesmoke;"><b>🍀Predictor🍀</b></h1>
+                <p class="lead" style="font-weight: 500;color: whitesmoke;">Detect</p>
+            </div>
+        </div>
+        <!-- End -->
+        <div class="row ">
+            <div class="col mx-auto">
+                <div class="p-5 bg-white shadow rounded-lg">
+                    <h5><b>Why is it necessary to detect diseases in plants ?</b></h5>
+                    <p>Detecting diseases in plants is paramount for safeguarding global food production, as it enables timely intervention to prevent yield losses, ensures the sustainability of agricultural practices, preserves biodiversity, and maintains economic stability within the farming sector. By identifying and managing plant diseases effectively, farmers can protect their crops from devastation, maintain food security for communities worldwide, and contribute to the overall resilience of agricultural systems in the face of environmental challenges and emerging threats.
+                    </p>
+                    <a target="_blank" href="https://extension.umn.edu/how/preventing-plant-diseases-garden"
+                        class="mx-2"><button type="button" class="btn btn-outline-success">More info</button></a>
+                </div>
+            </div>
+            <div class="col mx-auto">
+                <div class="p-5 bg-white shadow rounded-lg">
+                    <img src="https://www.pngjoy.com/pngl/250/4840262_plants-png-indoors-tropical-plant-png-hd-png.png "
+                        height="300" alt="" width="200" class="d-block mx-auto mb-4 rounded-pill">
+
+                    <!-- Custom file upload for images -->
+                    <form action="/submit" method="POST" enctype="multipart/form-data">
+                        <label class="custom-file-upload">
+                            <input type="file" name="image" accept="image/*" style="display: none;" onchange="document.getElementById('file-chosen').textContent = this.files[0].name;">
+                            Choose Image
+                        </label>
+                        <span id="file-chosen">No file chosen</span>
+
+                        <h6 class="text-center mb-4 text-muted">
+                            Upload an image of your diseased plant leaf.
+                        </h6>
+
+                        <!-- Custom bootstrap upload file-->
+                        <center>
+                            <button type="submit" class="btn btn-outline-success">Submit</button>
+                        </center>
+                    </form>
+                    <!-- End -->
+
+                </div>
+            </div>
+            <div class="col mx-auto">
+                <div class="p-5 bg-white shadow rounded-lg">
+                    <h5><b>Prevent Plant Disease follow below steps:</b></h5>
+                    <p>
+                        Preventing plant diseases involves several crucial steps: vigilantly monitoring crops, rotating them to avoid pathogen buildup, maintaining proper sanitation practices, ensuring timely and adequate irrigation, applying balanced fertilization methods, and selecting disease-resistant plant varieties for cultivation. These measures collectively contribute to safeguarding plant health, optimizing agricultural productivity, and sustaining global food security..
+                    </p>
+                    <a target="_blank" href="https://www.thespruce.com/prevent-plant-diseases-in-your-garden-2539511"
+                        class="mx-2"><button type="button" class="btn btn-outline-success">More info</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
