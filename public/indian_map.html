@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_96d3d1485240adb3baa20a9260d3b7bf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+</head>
+<body>
+            <div class="folium-map" id="map_96d3d1485240adb3baa20a9260d3b7bf" ></div>
+</body>
+<script>
+            var map_96d3d1485240adb3baa20a9260d3b7bf = L.map(
+                "map_96d3d1485240adb3baa20a9260d3b7bf",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            var tile_layer_34211115244ec12a77875c6fde35330d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            tile_layer_34211115244ec12a77875c6fde35330d.addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+            var marker_92d502d0ecf6dca395ad8e305d3b5b33 = L.marker(
+                [15.9129, 79.74],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_65cd5d442ceba741f905fd824ca27f12 = L.popup({"maxWidth": "100%"});
+                var html_6f64b81fabdad07456a6bc1c64d4229a = $(`<div id="html_6f64b81fabdad07456a6bc1c64d4229a" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Andhra Pradesh</h3><ul><li><b>Coconut : 16935.05846</b></li></ul></div></div>`)[0];
+                popup_65cd5d442ceba741f905fd824ca27f12.setContent(html_6f64b81fabdad07456a6bc1c64d4229a);
+        marker_92d502d0ecf6dca395ad8e305d3b5b33.bindPopup(popup_65cd5d442ceba741f905fd824ca27f12)
+        ;
+            var marker_4ac5738602792de62e45086367cfedbc = L.marker(
+                [27.1004, 93.6167],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_8fb8677bf58af9cc742fadee79661e36 = L.popup({"maxWidth": "100%"});
+                var html_6e0ad77204a37fdd50fe47d1eaa97f05 = $(`<div id="html_6e0ad77204a37fdd50fe47d1eaa97f05" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Arunachal Pradesh</h3><ul><li><b>Sugarcane: 23.74764706</b></li></ul></div></div>`)[0];
+                popup_8fb8677bf58af9cc742fadee79661e36.setContent(html_6e0ad77204a37fdd50fe47d1eaa97f05);
+        marker_4ac5738602792de62e45086367cfedbc.bindPopup(popup_8fb8677bf58af9cc742fadee79661e36)
+        ;
+            var marker_1727a74b246e6057a35bcd80f4f64a84 = L.marker(
+                [26.2006, 92.9376],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_68a5234cf761c7b256acdfe847b861b5 = L.popup({"maxWidth": "100%"});
+                var html_829ddc687601fd86cbedd9c54c5449c4 = $(`<div id="html_829ddc687601fd86cbedd9c54c5449c4" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Assam</h3><ul><li><b>Coconut : 9156.942222</b></li></ul></div></div>`)[0];
+                popup_68a5234cf761c7b256acdfe847b861b5.setContent(html_829ddc687601fd86cbedd9c54c5449c4);
+        marker_1727a74b246e6057a35bcd80f4f64a84.bindPopup(popup_68a5234cf761c7b256acdfe847b861b5)
+        ;
+            var marker_024e30627114485ada84ef84b9b1c805 = L.marker(
+                [25.0961, 85.3131],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_91f415581d488ddfa870d80b53bc6975 = L.popup({"maxWidth": "100%"});
+                var html_aac6258c40873cf8fcf00172809d52ee = $(`<div id="html_aac6258c40873cf8fcf00172809d52ee" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Bihar</h3><ul><li><b>Sugarcane: 65.4878125</b></li></ul></div></div>`)[0];
+                popup_91f415581d488ddfa870d80b53bc6975.setContent(html_aac6258c40873cf8fcf00172809d52ee);
+        marker_024e30627114485ada84ef84b9b1c805.bindPopup(popup_91f415581d488ddfa870d80b53bc6975)
+        ;
+            var marker_9897ebd63ba971fd0db1faa7da47314a = L.marker(
+                [21.2787, 81.8661],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_2a16bbdde5ba3879a0b813a7412127b5 = L.popup({"maxWidth": "100%"});
+                var html_013f3cb08a84dd62e0021c364cf766f6 = $(`<div id="html_013f3cb08a84dd62e0021c364cf766f6" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Chhattisgarh</h3><ul><li><b>Bajra: 74.30307692</b></li><li><b>Sugarcane: 48.28</b></li></ul></div></div>`)[0];
+                popup_2a16bbdde5ba3879a0b813a7412127b5.setContent(html_013f3cb08a84dd62e0021c364cf766f6);
+        marker_9897ebd63ba971fd0db1faa7da47314a.bindPopup(popup_2a16bbdde5ba3879a0b813a7412127b5)
+        ;
+            var marker_4df967c0d8a5706a441bc13841dc1012 = L.marker(
+                [28.6139, 77.209],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_1b109312d62cc3075d68693aa41887f1 = L.popup({"maxWidth": "100%"});
+                var html_478ba6426229c13e8abccece1f2b2c7a = $(`<div id="html_478ba6426229c13e8abccece1f2b2c7a" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Delhi</h3><ul><li><b>Sugarcane: 92.0</b></li></ul></div></div>`)[0];
+                popup_1b109312d62cc3075d68693aa41887f1.setContent(html_478ba6426229c13e8abccece1f2b2c7a);
+        marker_4df967c0d8a5706a441bc13841dc1012.bindPopup(popup_1b109312d62cc3075d68693aa41887f1)
+        ;
+            var marker_b35f3390d93dba80b83f82692f76f557 = L.marker(
+                [15.2993, 74.124],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_f44e233417debea12d85cb3df839b786 = L.popup({"maxWidth": "100%"});
+                var html_0e990f9ce2df82fb9ba5fc3b06250c46 = $(`<div id="html_0e990f9ce2df82fb9ba5fc3b06250c46" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Goa</h3><ul><li><b>Coconut : 6359.69</b></li></ul></div></div>`)[0];
+                popup_f44e233417debea12d85cb3df839b786.setContent(html_0e990f9ce2df82fb9ba5fc3b06250c46);
+        marker_b35f3390d93dba80b83f82692f76f557.bindPopup(popup_f44e233417debea12d85cb3df839b786)
+        ;
+            var marker_d3d21914fadb5685b5ff235d423ccc6b = L.marker(
+                [22.2587, 71.1924],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_8a6b5890f524cbfedf63902e360807c8 = L.popup({"maxWidth": "100%"});
+                var html_a12a7f230f89468d26d0e7b635a2c4cf = $(`<div id="html_a12a7f230f89468d26d0e7b635a2c4cf" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Gujarat</h3><ul><li><b>Banana: 82.90272727</b></li><li><b>Sugarcane: 75.31714286</b></li></ul></div></div>`)[0];
+                popup_8a6b5890f524cbfedf63902e360807c8.setContent(html_a12a7f230f89468d26d0e7b635a2c4cf);
+        marker_d3d21914fadb5685b5ff235d423ccc6b.bindPopup(popup_8a6b5890f524cbfedf63902e360807c8)
+        ;
+            var marker_9173084f79522f513a5cb3ef798f6085 = L.marker(
+                [29.0588, 76.0856],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_4739a7bd8a968d0fb5489d94ca4f6d43 = L.popup({"maxWidth": "100%"});
+                var html_0bd14acae730c1cce8fc2a5a63be76ca = $(`<div id="html_0bd14acae730c1cce8fc2a5a63be76ca" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Haryana</h3><ul><li><b>Onion: 178.6530769</b></li><li><b>Sugarcane: 82.12473684</b></li></ul></div></div>`)[0];
+                popup_4739a7bd8a968d0fb5489d94ca4f6d43.setContent(html_0bd14acae730c1cce8fc2a5a63be76ca);
+        marker_9173084f79522f513a5cb3ef798f6085.bindPopup(popup_4739a7bd8a968d0fb5489d94ca4f6d43)
+        ;
+            var marker_1b3ec8efcd515ac9d630e91297c622e4 = L.marker(
+                [31.1048, 77.1734],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_cc4ae70a71e2aeae5062fd58c28d2ec0 = L.popup({"maxWidth": "100%"});
+                var html_70b5799e98f75e86950d5bb54f1207a3 = $(`<div id="html_70b5799e98f75e86950d5bb54f1207a3" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Himachal Pradesh</h3><ul><li><b>Sugarcane: 26.19142857</b></li></ul></div></div>`)[0];
+                popup_cc4ae70a71e2aeae5062fd58c28d2ec0.setContent(html_70b5799e98f75e86950d5bb54f1207a3);
+        marker_1b3ec8efcd515ac9d630e91297c622e4.bindPopup(popup_cc4ae70a71e2aeae5062fd58c28d2ec0)
+        ;
+            var marker_b107f1a2eb67faf47448308235f17774 = L.marker(
+                [33.2778, 75.3412],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_6a216173062278a0441f579f5c5a9643 = L.popup({"maxWidth": "100%"});
+                var html_be6d669965ba513ec0e83e4bd5d3d528 = $(`<div id="html_be6d669965ba513ec0e83e4bd5d3d528" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Jammu and Kashmir</h3><ul><li><b>Potato: 17.04</b></li></ul></div></div>`)[0];
+                popup_6a216173062278a0441f579f5c5a9643.setContent(html_be6d669965ba513ec0e83e4bd5d3d528);
+        marker_b107f1a2eb67faf47448308235f17774.bindPopup(popup_6a216173062278a0441f579f5c5a9643)
+        ;
+            var marker_b23f05bb64bd9270323661be80421e12 = L.marker(
+                [23.6102, 85.2799],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_cd4aa177d5b0785d96025aef726c3f20 = L.popup({"maxWidth": "100%"});
+                var html_927c83f68692ddfe43aae9fe482c8da1 = $(`<div id="html_927c83f68692ddfe43aae9fe482c8da1" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Jharkhand</h3><ul><li><b>Sugarcane: 49.495</b></li></ul></div></div>`)[0];
+                popup_cd4aa177d5b0785d96025aef726c3f20.setContent(html_927c83f68692ddfe43aae9fe482c8da1);
+        marker_b23f05bb64bd9270323661be80421e12.bindPopup(popup_cd4aa177d5b0785d96025aef726c3f20)
+        ;
+            var marker_9792c516b048475dc5869a7539b517ed = L.marker(
+                [15.3173, 75.7139],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_35eb94b82c95af2ad44e10aa5eeddb3d = L.popup({"maxWidth": "100%"});
+                var html_f6595f7db2aadf00b9f493e6a76b9fe6 = $(`<div id="html_f6595f7db2aadf00b9f493e6a76b9fe6" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Karnataka</h3><ul><li><b>Coconut : 5079.793793</b></li></ul></div></div>`)[0];
+                popup_35eb94b82c95af2ad44e10aa5eeddb3d.setContent(html_f6595f7db2aadf00b9f493e6a76b9fe6);
+        marker_9792c516b048475dc5869a7539b517ed.bindPopup(popup_35eb94b82c95af2ad44e10aa5eeddb3d)
+        ;
+            var marker_878f5e7e80bed8d89aecd454eb248c5e = L.marker(
+                [10.8505, 76.2711],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_b5bfb4d13e0b39273065ef2e232a0f70 = L.popup({"maxWidth": "100%"});
+                var html_06a3dec43cc5133f24b194a0fac1968b = $(`<div id="html_06a3dec43cc5133f24b194a0fac1968b" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Kerala</h3><ul><li><b>Sugarcane: 90.19</b></li></ul></div></div>`)[0];
+                popup_b5bfb4d13e0b39273065ef2e232a0f70.setContent(html_06a3dec43cc5133f24b194a0fac1968b);
+        marker_878f5e7e80bed8d89aecd454eb248c5e.bindPopup(popup_b5bfb4d13e0b39273065ef2e232a0f70)
+        ;
+            var marker_d149ac7b621aafc976c279bb7d3ab7b9 = L.marker(
+                [22.9734, 78.6569],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_7f3f0fda742652b8bbfd43d2201b5124 = L.popup({"maxWidth": "100%"});
+                var html_285d8e684ee0ff6afe8cceb0fe482f57 = $(`<div id="html_285d8e684ee0ff6afe8cceb0fe482f57" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Madhya Pradesh</h3><ul><li><b>Banana: 48.04833333</b></li></ul></div></div>`)[0];
+                popup_7f3f0fda742652b8bbfd43d2201b5124.setContent(html_285d8e684ee0ff6afe8cceb0fe482f57);
+        marker_d149ac7b621aafc976c279bb7d3ab7b9.bindPopup(popup_7f3f0fda742652b8bbfd43d2201b5124)
+        ;
+            var marker_6b8f5677b71e471d3d0cfc691c062bb0 = L.marker(
+                [19.7515, 75.7139],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_489ccbca77a10daad1f1f226646a7b35 = L.popup({"maxWidth": "100%"});
+                var html_e3513fd48527a3772e92a1fd41429a04 = $(`<div id="html_e3513fd48527a3772e92a1fd41429a04" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Maharashtra</h3><ul><li><b>Maize: 989.87</b></li><li><b>Cotton(lint): 95.99391304</b></li><li><b>Sugarcane: 86.55576923</b></li></ul></div></div>`)[0];
+                popup_489ccbca77a10daad1f1f226646a7b35.setContent(html_e3513fd48527a3772e92a1fd41429a04);
+        marker_6b8f5677b71e471d3d0cfc691c062bb0.bindPopup(popup_489ccbca77a10daad1f1f226646a7b35)
+        ;
+            var marker_af5cf206f8b472ace4dda4903566f378 = L.marker(
+                [24.6637, 93.9063],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_dcac31e34ed2707923cac9512343d9ff = L.popup({"maxWidth": "100%"});
+                var html_ab19f528af9ca9e8fd02fa5bddbc45f3 = $(`<div id="html_ab19f528af9ca9e8fd02fa5bddbc45f3" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Manipur</h3><ul><li><b>Sugarcane: 59.26444444</b></li></ul></div></div>`)[0];
+                popup_dcac31e34ed2707923cac9512343d9ff.setContent(html_ab19f528af9ca9e8fd02fa5bddbc45f3);
+        marker_af5cf206f8b472ace4dda4903566f378.bindPopup(popup_dcac31e34ed2707923cac9512343d9ff)
+        ;
+            var marker_ddfe64bc981c2e2360ab262040944556 = L.marker(
+                [25.467, 91.3662],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_3a148bd3f08b5234aa9eb436f81a3740 = L.popup({"maxWidth": "100%"});
+                var html_fddcf44c2abb1661e6ab5cc9c0bc0ed7 = $(`<div id="html_fddcf44c2abb1661e6ab5cc9c0bc0ed7" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Meghalaya</h3><ul><li><b>Banana: 11.42714286</b></li></ul></div></div>`)[0];
+                popup_3a148bd3f08b5234aa9eb436f81a3740.setContent(html_fddcf44c2abb1661e6ab5cc9c0bc0ed7);
+        marker_ddfe64bc981c2e2360ab262040944556.bindPopup(popup_3a148bd3f08b5234aa9eb436f81a3740)
+        ;
+            var marker_de31ec552a0ca4fc173b43c6b015d63f = L.marker(
+                [23.685, 92.9376],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_210d25b5a16c0bb95bc651aac2de612d = L.popup({"maxWidth": "100%"});
+                var html_29226d1c0991522c8f61741feeae9157 = $(`<div id="html_29226d1c0991522c8f61741feeae9157" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Mizoram</h3><ul><li><b>Sugarcane: 32.8575</b></li></ul></div></div>`)[0];
+                popup_210d25b5a16c0bb95bc651aac2de612d.setContent(html_29226d1c0991522c8f61741feeae9157);
+        marker_de31ec552a0ca4fc173b43c6b015d63f.bindPopup(popup_210d25b5a16c0bb95bc651aac2de612d)
+        ;
+            var marker_5be0c2c050e9e8c1eec8e0e1f64a00bb = L.marker(
+                [26.1584, 94.5624],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_0ef9517c3b494f8a1dad7d333e98158f = L.popup({"maxWidth": "100%"});
+                var html_318babdeabde99aaa4839cdbf202841a = $(`<div id="html_318babdeabde99aaa4839cdbf202841a" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Nagaland</h3><ul><li><b>Sugarcane: 55.63166667</b></li></ul></div></div>`)[0];
+                popup_0ef9517c3b494f8a1dad7d333e98158f.setContent(html_318babdeabde99aaa4839cdbf202841a);
+        marker_5be0c2c050e9e8c1eec8e0e1f64a00bb.bindPopup(popup_0ef9517c3b494f8a1dad7d333e98158f)
+        ;
+            var marker_f5585304d0c2ce444ac6498788a6dac6 = L.marker(
+                [20.9517, 85.0985],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_e222a1de7a335f54256f83de82236f47 = L.popup({"maxWidth": "100%"});
+                var html_2c6d1066ef34e06a1553f71db5730b9c = $(`<div id="html_2c6d1066ef34e06a1553f71db5730b9c" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Odisha</h3><ul><li><b>Sugarcane: 60.69166667</b></li></ul></div></div>`)[0];
+                popup_e222a1de7a335f54256f83de82236f47.setContent(html_2c6d1066ef34e06a1553f71db5730b9c);
+        marker_f5585304d0c2ce444ac6498788a6dac6.bindPopup(popup_e222a1de7a335f54256f83de82236f47)
+        ;
+            var marker_bbf0d1c2a4d5203fb52cabf329ee2f19 = L.marker(
+                [11.9416, 79.8083],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_0b6d32dbbfb87b4a848667e205ab41bf = L.popup({"maxWidth": "100%"});
+                var html_bc4d5d4834ef1f186c028fdf1fa4556f = $(`<div id="html_bc4d5d4834ef1f186c028fdf1fa4556f" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Puducherry</h3><ul><li><b>Coconut : 12812.4475</b></li></ul></div></div>`)[0];
+                popup_0b6d32dbbfb87b4a848667e205ab41bf.setContent(html_bc4d5d4834ef1f186c028fdf1fa4556f);
+        marker_bbf0d1c2a4d5203fb52cabf329ee2f19.bindPopup(popup_0b6d32dbbfb87b4a848667e205ab41bf)
+        ;
+            var marker_86ce5a0ae864cb87976dd95bcf4fa21b = L.marker(
+                [31.1471, 75.3412],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_949b393289dea942ff7d2cb9f24517b6 = L.popup({"maxWidth": "100%"});
+                var html_2a671c071a8594d67c137e0692adb107 = $(`<div id="html_2a671c071a8594d67c137e0692adb107" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Punjab</h3><ul><li><b>Sugarcane: 84.3725</b></li></ul></div></div>`)[0];
+                popup_949b393289dea942ff7d2cb9f24517b6.setContent(html_2a671c071a8594d67c137e0692adb107);
+        marker_86ce5a0ae864cb87976dd95bcf4fa21b.bindPopup(popup_949b393289dea942ff7d2cb9f24517b6)
+        ;
+            var marker_df0ded42900ede986740a0bf792bb5d5 = L.marker(
+                [11.1271, 78.6569],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_7520d3c198b79929347138f3f1bdf315 = L.popup({"maxWidth": "100%"});
+                var html_41877028f934ea71389cc11c454356d9 = $(`<div id="html_41877028f934ea71389cc11c454356d9" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Tamil Nadu</h3><ul><li><b>Cashewnut: 338.5489655</b></li><li><b>Sugarcane: 136.0751852</b></li></ul></div></div>`)[0];
+                popup_7520d3c198b79929347138f3f1bdf315.setContent(html_41877028f934ea71389cc11c454356d9);
+        marker_df0ded42900ede986740a0bf792bb5d5.bindPopup(popup_7520d3c198b79929347138f3f1bdf315)
+        ;
+            var marker_9c77ff6e9bb0dce344883dce84c5416e = L.marker(
+                [18.1124, 79.0193],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_51190f3ac3e7bf6f40abd96ac2b7ba03 = L.popup({"maxWidth": "100%"});
+                var html_71a2107a9d85997632d259fbe14fc905 = $(`<div id="html_71a2107a9d85997632d259fbe14fc905" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Telangana</h3><ul><li><b>Coconut : 21105.0</b></li><li><b>Sugarcane: 84.7273913</b></li></ul></div></div>`)[0];
+                popup_51190f3ac3e7bf6f40abd96ac2b7ba03.setContent(html_71a2107a9d85997632d259fbe14fc905);
+        marker_9c77ff6e9bb0dce344883dce84c5416e.bindPopup(popup_51190f3ac3e7bf6f40abd96ac2b7ba03)
+        ;
+            var marker_4f5ddbba89fdb8953ca21dee1619747e = L.marker(
+                [23.9408, 91.9882],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_2dd04c1e242267082fcde94e719b9fa4 = L.popup({"maxWidth": "100%"});
+                var html_0ea9ca9a15232c47bc916e27c191b07d = $(`<div id="html_0ea9ca9a15232c47bc916e27c191b07d" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Tripura</h3><ul><li><b>Sugarcane: 55.4425</b></li></ul></div></div>`)[0];
+                popup_2dd04c1e242267082fcde94e719b9fa4.setContent(html_0ea9ca9a15232c47bc916e27c191b07d);
+        marker_4f5ddbba89fdb8953ca21dee1619747e.bindPopup(popup_2dd04c1e242267082fcde94e719b9fa4)
+        ;
+            var marker_47a66998425e74557174ee826cd9e60b = L.marker(
+                [26.8467, 80.9462],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_ce69ccbc8e3ae8192b253496c0228f55 = L.popup({"maxWidth": "100%"});
+                var html_0ad8dea40fafcbaba53ad7c6ded60848 = $(`<div id="html_0ad8dea40fafcbaba53ad7c6ded60848" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Uttar Pradesh</h3><ul><li><b>Sugarcane: 70.96973333</b></li></ul></div></div>`)[0];
+                popup_ce69ccbc8e3ae8192b253496c0228f55.setContent(html_0ad8dea40fafcbaba53ad7c6ded60848);
+        marker_47a66998425e74557174ee826cd9e60b.bindPopup(popup_ce69ccbc8e3ae8192b253496c0228f55)
+        ;
+            var marker_b3d1b2d1076eaca376ae678cacac7f6d = L.marker(
+                [30.0668, 79.0193],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_c1d21f8901602eca4a9632e25b8df3e0 = L.popup({"maxWidth": "100%"});
+                var html_a13088002e915f88f0cb513dd4b575d4 = $(`<div id="html_a13088002e915f88f0cb513dd4b575d4" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>Uttarakhand</h3><ul><li><b>Sugarcane: 81.54</b></li></ul></div></div>`)[0];
+                popup_c1d21f8901602eca4a9632e25b8df3e0.setContent(html_a13088002e915f88f0cb513dd4b575d4);
+        marker_b3d1b2d1076eaca376ae678cacac7f6d.bindPopup(popup_c1d21f8901602eca4a9632e25b8df3e0)
+        ;
+            var marker_ce949c38bab6b89e245f6ddb3b3a42dc = L.marker(
+                [22.9868, 87.855],
+                {}
+            ).addTo(map_96d3d1485240adb3baa20a9260d3b7bf);
+        var popup_bc84693ec9db22ec7420a3ce4658bbac = L.popup({"maxWidth": "100%"});
+                var html_740c7db9282f715951efbfb1be0d57d0 = $(`<div id="html_740c7db9282f715951efbfb1be0d57d0" style="width: 100.0%; height: 100.0%;"><div style='width: 175px; height: 100px;'><h3>West Bengal</h3><ul><li><b>Coconut : 13592.12778</b></li></ul></div></div>`)[0];
+                popup_bc84693ec9db22ec7420a3ce4658bbac.setContent(html_740c7db9282f715951efbfb1be0d57d0);
+        marker_ce949c38bab6b89e245f6ddb3b3a42dc.bindPopup(popup_bc84693ec9db22ec7420a3ce4658bbac)
+        ;
+</script>
+</html>

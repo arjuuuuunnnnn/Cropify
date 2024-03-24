@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf</title>
+    <link rel="stylesheet" href="submit.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="row mb-5 text-center text-white">
+            <div class="col-lg-10 mx-auto">
+                <h1 class="display-4"><b>🍀 Predictor 🍀</b></h1>
+                <p class="lead">Detect</p>
+            </div>
+        </header>
+
+        <div class="row">
+            <div class="col">
+                <div class="p-5 shadow rounded-lg">
+                    <h2>Why is it necessary to detect diseases in plants?</h2>
+                    <p>Detecting diseases in plants is paramount for safeguarding global food production, as it enables timely intervention to prevent yield losses, ensures the sustainability of agricultural practices, preserves biodiversity, and maintains economic stability within the farming sector. By identifying and managing plant diseases effectively, farmers can protect their crops from devastation, maintain food security for communities worldwide, and contribute to the overall resilience of agricultural systems in the face of environmental challenges and emerging threats.</p>
+                    <a href="https://extension.umn.edu/how/preventing-plant-diseases-garden" class="btn btn-outline-success">More info</a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="p-5 shadow rounded-lg">
+                    <img src="https://www.pngjoy.com/pngl/250/4840262_plants-png-indoors-tropical-plant-png-hd-png.png" alt="Plant" class="d-block mx-auto mb-4 rounded-pill">
+
+                    <form action="/submit" method="POST" enctype="multipart/form-data">
+                        <label for="imageUpload" class="custom-file-upload">
+                            Choose Image
+                            <input type="file" id="imageUpload" name="image" accept="image/*" style="display: none;" onchange="document.getElementById('file-chosen').textContent = this.files[0].name;">
+                        </label>
+                        <span id="file-chosen">No file chosen</span>
+
+                        <h6 class="text-center mb-4 text-muted">Upload an image of your diseased plant leaf.</h6>
+
+                        <center>
+                            <button type="submit" class="btn btn-outline-success">Submit</button>
+                        </center>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="p-5 shadow rounded-lg">
+                    <h2>Prevent Plant Disease follow below steps:</h2>
+                    <p>Preventing plant diseases involves several crucial steps: vigilantly monitoring crops, rotating them to avoid pathogen buildup, maintaining proper sanitation practices, ensuring timely and adequate irrigation, applying balanced fertilization methods, and selecting disease-resistant plant varieties for cultivation. These measures collectively contribute to safeguarding plant health, optimizing agricultural productivity, and sustaining global food security.</p>
+                    <a href="https://www.thespruce.com/prevent-plant-diseases-in-your-garden-2539511" class="btn btn-outline-success">More info</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script defer>
+        const actualBtn = document.querySelector('input[type=file]');
+        const fileChosen = document.getElementById('file-chosen');
+        actualBtn.addEventListener('change', function () {
+            fileChosen.textContent = this.files[0].name;
+        });
+    </script>
+</body>
+
+</html>
