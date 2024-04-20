@@ -28,7 +28,7 @@
     │   │
     │   ├── App.js           
     │   │    
-    │   ├── Index.js       
+    │   └── Index.js       
     │
     ├── server.py
     |
