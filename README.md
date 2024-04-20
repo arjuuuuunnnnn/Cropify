@@ -1,8 +1,7 @@
 # Project Organization
 ------------
 
-    ├── README.md        
-    |          
+    ├── README.md                  
     ├── data
     │   ├── processed      
     │   └── raw            
