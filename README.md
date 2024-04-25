@@ -1,7 +1,17 @@
+# Cropify
+Cropify is a web application built with React that aims to assist farmers in optimizing their crop yield and diagnosing plant diseases. By leveraging machine learning models such as Convolutional Neural Networks (CNN), Light Gradient Boosting Machine (Light GBM), and Decision Trees, Cropify offers predictive insights to farmers based on input data, including images of plant leaves
+
+### Features:
+- Crop Yield Estimation
+- Fertilizer recommendation
+- Suitable Crop Recommendation
+- Leaf disease Detection
+
 # Project Organization
 ------------
 
-    ├── README.md                  
+    ├── README.md        
+          
     ├── data
     │   ├── processed      
     │   └── raw            
